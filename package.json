@@ -1,0 +1,11 @@
+{
+  "name": "porto",
+  "version": "1.0.0",
+  "description": "dasasd",
+  "main": "code/index.html",
+  "scripts": {
+    "build": "echo 'Build'"
+  },
+  "author": "",
+  "license": "ISC"
+}
