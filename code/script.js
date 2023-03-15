@@ -32,33 +32,24 @@ window.onscroll = () => {
     header.classList.toggle('sticky', window.scrollY > 100);
 // remove icon tooge navbar when click navbar link
 
+const portfolioSection = document.querySelector('.portofolio');
+
 let links = document.querySelectorAll('header nav a');
 
 links.forEach((link) => {
-  link.addEventListener('click', () =>{
-    console.log()
-    menuIcon.classList.remove('bx-x');
-    navbar.classList.remove('active');
-  });
+  if (link.id !== "portofolio-link") {
+    link.addEventListener('click', () =>{
+      menuIcon.classList.remove('bx-x');
+      navbar.classList.remove('active');
+      portfolioSection.classList.remove('animated');
+    });
+  }
 });
 
 //animated portofolio page
 
-let navbarLinks = document.querySelectorAll('.navbar-link');
+const navbarPortfolio = document.querySelector('#portofolio-link');
 
-navbarLinks.forEach(link => {
-  link.addEventListener('click', () => {
-    navbar.classList.remove('animated');
-    setTimeout(() => {
-      navbar.classList.add('animated');
-    }, 0);
-  });
+navbarPortfolio.addEventListener('click', () => {
+  portfolioSection.classList.add('animated');
 });
-
-navbar.addEventListener('animationend', () => {
-  setTimeout(() => {
-    navbar.classList.add('animated');
-  }, 0);
-});
-
-
