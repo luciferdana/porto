@@ -32,7 +32,6 @@ body {
 section {
     min-height: 100vh;
     padding: 10rem 9% 2rem;
-
 }
 
 .header {
@@ -91,7 +90,18 @@ section {
 .home-img img {
     width: 28vw;
     margin: 3rem;
-
+    animation: floatImage 4s ease-in-out infinite;
+}
+@keyframes floatImage{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-2.4rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
 }
 
 .home-content a {
@@ -400,7 +410,7 @@ section {
         grid-template-columns: repeat(2, 1fr);
     }
     .contact {
-        min-height: auto;
+        min-height: 85vh;
     }
 }
 @media (max-width: 617px){
@@ -411,5 +421,20 @@ section {
 @media (max-width: 450px){
     html{
         font-size: 50%;
+    }
+    .contact form .input-box input{
+        width: 100%;
+    }
+}
+@media (max-width: 350px){
+    .home img{
+        width: 90vw;
+    }
+    .footer{
+        flex-direction: column-reverse;
+    }
+    .footer p{
+        margin-top: 2rem;
+        text-align: center;
     }
 }

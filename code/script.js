@@ -46,10 +46,20 @@ links.forEach((link) => {
   }
 });
 
-//animated portofolio page
-
 const navbarPortfolio = document.querySelector('#portofolio-link');
 
 navbarPortfolio.addEventListener('click', () => {
   portfolioSection.classList.add('animated');
 });
+//scroll reveal
+ScrollReveal({
+  reset:true,
+  distance: '80px',
+  delay: 200,
+  duration: 2000,
+});
+
+ScrollReveal().reveal('.home-content, heading', {origin: 'bottom'});
+ScrollReveal().reveal('.home-img, .portofolio-box, .contact form', {origin: 'top'});
+ScrollReveal().reveal('.home-content h1, .about-img', {origin: 'right'});
+ScrollReveal().reveal('.home-content p, .about-content', {origin: 'left'});
