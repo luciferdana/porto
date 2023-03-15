@@ -41,3 +41,24 @@ links.forEach((link) => {
     navbar.classList.remove('active');
   });
 });
+
+//animated portofolio page
+
+let navbarLinks = document.querySelectorAll('.navbar-link');
+
+navbarLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    navbar.classList.remove('animated');
+    setTimeout(() => {
+      navbar.classList.add('animated');
+    }, 0);
+  });
+});
+
+navbar.addEventListener('animationend', () => {
+  setTimeout(() => {
+    navbar.classList.add('animated');
+  }, 0);
+});
+
+

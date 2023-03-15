@@ -208,13 +208,19 @@ section {
     background-image: var(--bg-color);
     background-size: cover;
     background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .portofolio h1 {
     text-align: center;
     font-size: 4.2rem;
-    line-height: 14;
+    display: flex;
     color: var(--text-color);
+}
+
+.portofolio.animated h1 {
     animation-name: fade;
     animation-duration: 3.5s;
     animation-timing-function: ease-out;
@@ -330,7 +336,7 @@ section {
     }
 
     section {
-        padding: 10rem 3% 2rem;
+        padding: 0 2rem;
     }
 
     .footer {
@@ -388,7 +394,7 @@ section {
     }
     .portofolio h1{
         font-size: 3.5rem;
-        /* justify-content: center; */
+        
     }
     .portofolio-container{
         grid-template-columns: repeat(2, 1fr);
