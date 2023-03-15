@@ -31,5 +31,13 @@ window.onscroll = () => {
 
     header.classList.toggle('sticky', window.scrollY > 100);
 // remove icon tooge navbar when click navbar link
-  menuIcon.classList.remove('bx-x');
-  navbar.classList.remove('active');
+
+let links = document.querySelectorAll('header nav a');
+
+links.forEach((link) => {
+  link.addEventListener('click', () =>{
+    console.log()
+    menuIcon.classList.remove('bx-x');
+    navbar.classList.remove('active');
+  });
+});
