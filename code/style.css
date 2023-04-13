@@ -44,10 +44,9 @@ section {
     justify-content: space-between;
     align-items: baseline;
     z-index: 100;
-    box-shadow: rgba(0, 0, 0, 0.2);
 }
 
-.header.sticky {
+.header {
      border-bottom: 0.2rem solid rgba(0, 0, 0, 0.2);
 }
 
