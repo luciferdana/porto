@@ -16,8 +16,6 @@
     --second-bg-color: #323946;
     --text-color: #fff;
     --main-color: #0ef;
-
-
 }
 
 html {
@@ -377,7 +375,7 @@ section {
     }
 
     .navbar a {
-        display: block;
+        display:block;
         color: var(--text-color);
         font-size: 2rem;
         margin: 3rem 0;

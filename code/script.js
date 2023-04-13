@@ -61,5 +61,3 @@ ScrollReveal({
 
 ScrollReveal().reveal('.home-content, heading', {origin: 'bottom'});
 ScrollReveal().reveal('.home-img, .portofolio-box, .contact form', {origin: 'top'});
-ScrollReveal().reveal('.home-content h1, .about-img', {origin: 'right'});
-ScrollReveal().reveal('.home-content p, .about-content', {origin: 'left'});
